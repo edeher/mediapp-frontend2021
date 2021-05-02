@@ -1,0 +1,35 @@
+
+    
+      <div class="example-header">
+            
+          </div>
+    <table class="mat-elevation-z8">
+
+       
+          <tr mat-header-cell > USUARIO :</tr>
+          <tr mat-cell > {{user}} </tr>
+        </table>
+
+        <div class="example-header">
+         
+          </div>
+
+          <table class="mat-elevation-z8">
+         <tr mat-header-cell> ROLES :</tr>
+        <tr *ngFor="let r of roles">
+            <td ><span>{{r}}</span></td>
+        </tr>
+    </table>
+   
+
+    <button mat-fab color="accent" style="float: right" routerLink="/paciente">
+        <mat-icon>
+            highlight_off
+              
+        </mat-icon>
+      </button>
+   
+     
+
+   
+
